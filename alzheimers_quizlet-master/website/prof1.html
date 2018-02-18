@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html sytle="overflow: hidden;">
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+	</head>
+	<body>
+		<div id="main">
+			<script>
+				output = document.getElementById("output");
+
+				function display_data(){
+					output = document.getElementById("output");
+					output.innerHTML = "Bio: Gloria was born in Colombia and is the daughter of Pilar and Fulgencio. She was born and raised in a poor and criminal filled village so she is used to doing manual labor. Gloria is very traditional and superstitious which leads her to believe that her family is cursed because her great-great-grandfather supposedly made a deal with the devil, causing many of her relatives to end up in jail. She is your wife and you two are two kids. Manny who she had with her ex husband and Joe who is yours.";
+				}
+			</script>
+			<img src="people/gloria.jpg" id="img_main" onclick="display_data()" height="437" width="412">
+			<p id="output">Gloria Pritchett</p>
+		</div>
+	</body>
+</html>

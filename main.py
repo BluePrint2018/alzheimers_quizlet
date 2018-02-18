@@ -36,6 +36,7 @@ class Family(object):
 										"DOB":user.dob,
 										"bio":user.bio,
 										"relation":user.realtion}
+										
 		return json.dumps(fam_dict)
 
 class Families(object):
@@ -64,6 +65,7 @@ def createUser():
 		user_list.append(User(name, dob, bio, relation))
 		print('Created new User: {}'.foramt(name))
 		return "Success!"
+
 	except Exception as e:
 		return e
 
@@ -74,6 +76,7 @@ def createFamily():
 		user_list = request.json["user_list"]
 		families.append(Family(main_user, user_list))
 		print('Created new Family with main_user: {}'.format(main_user.name))
+
 	except Exception as e:
 		return e
 

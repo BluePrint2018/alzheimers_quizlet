@@ -53,3 +53,17 @@ h1 {
 #blank {
 	height: 2rem;
 }
+
+nav {
+	background-color: white;
+}
+
+article {
+	background-color: white;
+}
+
+.people_picture {
+	width: 20rem;
+	height: 20rem;
+	border: 2px solid black;
+}

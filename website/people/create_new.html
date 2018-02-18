@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html sytle="overflow: hidden;">
 	<head>
-		<title>Create New User</title>
-		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="..\index.css"/>
 	</head>
 	<body>
-		<!-- TODO: make the create new user page 
-			 Doesn't have to be functional, just look pretty-->
+		<div id="main">
+			<script>
+				output = document.getElementById("output");
 
-
-
+				function display_data(){
+					output = document.getElementById("output");
+					output.innerHTML = "LOL this doesn't work yet.";
+				}
+			</script>
+			<img src="../assets/plus.png" id="img_main" onclick="display_data()" height="300" width="300">
+			<p id="output">Click the + button to being the process of adding a 
+			profile</p>
+		</div>
 	</body>
 </html>

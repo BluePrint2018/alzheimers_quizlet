@@ -1,7 +1,6 @@
 from flask import Flask, request
-#import json
+import json
 
-"""
 class User(object):
 	def __init__(self, name, dob, bio, relation):
 		self.name = name
@@ -33,7 +32,7 @@ class Family(object):
 	def get_family_info(self):
 		fam_dict = {}
 		for user in user_list:
-			fam_dict[str(user.name)] = {"name":user.name
+			fam_dict[str(user.name)] = {"name":user.name,
 										"DOB":user.dob,
 										"bio":user.bio,
 										"relation":user.realtion}
@@ -45,17 +44,16 @@ class Families(object):
 
 	def add_family(self, family):
 		self.fam_list()
-"""
-app = Flask(__name__, static_folder='website', static_url_path='')
-#user_list = UserList([])
-#families = Families([])
 
+app = Flask(__name__, static_folder='website', static_url_path='')
+user_list = UserList([])
+families = Families([])
 
 @app.route('/')
 def root():
-	return app.send_static_file('test.html')
+	return app.send_static_file('index.html')
 
-"""
+
 @app.route('/createUser', methods=["POST"])
 def createUser():
 	try:
@@ -69,14 +67,15 @@ def createUser():
 	except Exception as e:
 		return e
 
-@app.rout('/createFamily', methods=["POST"])
+@app.route('/createFamily', methods=["POST"])
 def createFamily():
 	try:
 		main_user = request.json["main_user"]
 		user_list = request.json["user_list"]
 		families.append(Family(main_user, user_list))
 		print('Created new Family with main_user: {}'.format(main_user.name))
-"""
+	except Exception as e:
+		return e
 
 if __name__ == "__main__":
 	app.run(debug=True)

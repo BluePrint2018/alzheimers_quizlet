@@ -67,3 +67,7 @@ article {
 	height: 20rem;
 	border: 2px solid black;
 }
+
+#img_main:hover {
+	cursor: pointer;
+}

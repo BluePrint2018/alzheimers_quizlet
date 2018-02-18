@@ -46,7 +46,7 @@ h1 {
 }
 #blurb_text {
 	width: 60%;
-	text-align: left;
+	text-align: center;
 	margin: auto;
 }
 
@@ -66,4 +66,15 @@ article {
 	width: 20rem;
 	height: 20rem;
 	border: 2px solid black;
+}
+
+#img_main {
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 80%;
+	height: 40%;
+}
+
+#img_main {
+	cursor: pointer;
 }

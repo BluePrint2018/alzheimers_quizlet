@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html sytle="overflow: hidden;">
+	<head>
+		<link rel="stylesheet" type="text/css" href="..\index.css"/>
+	</head>
+	<body>
+		<div id="main">
+			<script>
+				output = document.getElementById("output");
+
+				function display_data(){
+					output = document.getElementById("output");
+					output.innerHTML = "Success!";
+				}
+			</script>
+			<img src="..\assets\demo1.jpg" id="img_main" onclick="display_data()">
+			<p id="output">Click the picture to change the text</p>
+		</div>
+	</body>
+</html>
